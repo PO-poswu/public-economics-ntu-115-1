@@ -1,6 +1,6 @@
 ---
-title: "Quarto Presentations"
-subtitle: "Create beautiful interactive slide decks with Reveal.js"
+title: "Public Economics"
+subtitle: "Fall 2026"
 format:
   revealjs: 
     slide-number: true
@@ -14,412 +14,214 @@ format:
     # footer: '[https://quarto.org](https://quarto.org)'
 ---
 
-## USE LECTURES TO MODEL DEMOCRATIC TALK
+## Course Information
 
-brookfieldDiscussionWayTeaching2012-PREPARING FOR DISCUSSION (Page 44-45)
+- Instructor: Po-Shyan Wu
+- Email: "poshyanwu@ntu.edu.tw"
+- Office: Room 408
+- Class time: Mondays 9:10-12:10
 
-::: incremental
-- Begin every lecture with one or more questions that you're trying to answer.
-- End every lecture with a series of questions that your lecture has raised or left unanswered.
+## About the Instructor
+
+Research Interests:
+
+- Macroeconomics
+- Spatial Economics
+- Labor, Development, Economic History
+
+Course I teach:
+
+::: {.incremental}
+- [Public Economics]{.fragment .highlight-red}
+- Micro and Macro Perspectives of the Labor Market (Wed 3, 4)
+- International Finance (Spring 2027)
 :::
 
+# Part 1: Introduction
 
-## Hello, There :D
-
-This presentation will show you examples of what you can do with Quarto and [Reveal.js](https://revealjs.com), including:
-
-- Presenting code and LaTeX equations
-- Including computations in slide output
-- Image, video, and iframe backgrounds
-- Fancy transitions and animations
-- Activating scroll view
-
-...and much more
-
-## Pretty Code {auto-animate="true"}
-
-- Over 20 syntax highlighting themes available
-- Default theme optimized for accessibility
-
-``` r
-# Define a server for the Shiny app
-function(input, output) {
-  
-  # Fill in the spot we created for a plot
-  output$phonePlot <- renderPlot({
-    # Render a barplot
-  })
-}
-```
-
-::: footer
-Learn more: [Syntax Highlighting](https://quarto.org/docs/output-formats/html-code.html#highlighting)
-:::
-
-## Code Animations {auto-animate="true"}
-
-- Over 20 syntax highlighting themes available
-- Default theme optimized for accessibility
-
-``` r
-# Define a server for the Shiny app
-function(input, output) {
-  
-  # Fill in the spot we created for a plot
-  output$phonePlot <- renderPlot({
-    # Render a barplot
-    barplot(WorldPhones[,input$region]*1000, 
-            main=input$region,
-            ylab="Number of Telephones",
-            xlab="Year")
-  })
-}
-```
-
-::: footer
-Learn more: [Code Animations](https://quarto.org/docs/presentations/revealjs/advanced.html#code-animations)
-:::
-
-## Line Highlighting
-
-- Highlight specific lines for emphasis
-- Incrementally highlight additional lines
-
-``` {.python code-line-numbers="4-5|7|10"}
-import numpy as np
-import matplotlib.pyplot as plt
-
-r = np.arange(0, 2, 0.01)
-theta = 2 * np.pi * r
-fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
-ax.plot(theta, r)
-ax.set_rticks([0.5, 1, 1.5, 2])
-ax.grid(True)
-plt.show()
-```
-
-::: footer
-Learn more: [Line Highlighting](https://quarto.org/docs/presentations/revealjs/#line-highlighting)
-:::
-
-<!-- Dropped from the original demo: Executable Code, because it runs an R chunk that requires R and ggplot2. -->
+## What do you think it's about? {.smaller}
 
-## LaTeX Equations
+- tax incidence, optimal tax theory, and how taxes affect labor supply, savings, and corporate behavior
+- public goods, education, political economy, redistribution, and social insurance programs
+- applying microeconomic tools to government intervention across environmental policy, education, retirement systems, health care, and tax policy
+- taxation and efficiency, equity, income/consumption/wealth taxes, tax evasion/compliance
+- optimal design of unemployment insurance, disability insurance, and pensions
 
-[MathJax](https://www.mathjax.org/) rendering of equations to HTML
+## These are actual courses {.smaller}
 
-::::: columns
-::: {.column width="40%"}
-``` tex
-\begin{gather*}
-a_1=b_1+c_1\\
-a_2=b_2+c_2-d_2+e_2
-\end{gather*}
+- 14.471 Public Economics I (MIT, Fall 2012, Poterba & Werning)
+- 14.472 Public Economics II (MIT, Spring 2004, Gruber & Diamond)
+- 14.41 Public Finance and Public Policy (MIT, Fall 2024, Gruber)
+- ECON3040 Public Finance
+- ECON5059 Tax Theory and Policy
+- ECON7170 Topics in Social Security System
+<!-- 
+- 14.471 Public Economics I (MIT, Fall 2012, Poterba & Werning) — a graduate course on the theory and evidence of government taxation, covering tax incidence, optimal tax theory, and how taxes affect labor supply, savings, and corporate behavior.
+- 14.472 Public Economics II (MIT, Spring 2004, Gruber & Diamond) — a graduate course on government spending policy, spanning public goods, education, political economy, redistribution, and social insurance programs like Social Security and health care.
+- 14.41 Public Finance and Public Policy (MIT, Fall 2024, Gruber) — an undergraduate course applying microeconomic tools to government intervention across environmental policy, education, retirement systems, health care, and tax policy.
+- 11.491J Economic Development, Policy Analysis, and Industrialization (MIT, Fall 2004, Amsden) — a graduate course on why "latecomer" governments intervene to drive industrialization, tracing four stages from launching industry to advancing into high-tech sectors.
+- ECON3040 Public Finance — an undergraduate course on government revenue and intergovernmental fiscal adjustment (taxation and efficiency, equity, income/consumption/wealth taxes) framed around current debt-sustainability and fiscal-bailout debates in the US and Japan.
+- ECON5059 Tax Theory and Policy — a graduate course working through the theoretical framework of taxation, from excess burden and tax incidence to optimal commodity and income taxation, tax evasion/compliance, and current tax-reform debates.
+- ECON7170 Topics in Social Security System — a graduate seminar on optimal design of unemployment insurance, disability insurance, and pensions, built around key papers (Hopenhayn & Nicolini, Kocherlakota, Golosov & Tsyvinski, Grochulski & Kocherlakota). -->
 
-\begin{align}
-a_{11}& =b_{11}&
-  a_{12}& =b_{12}\\
-a_{21}& =b_{21}&
-  a_{22}& =b_{22}+c_{22}
-\end{align}
-```
-:::
+# Syllabus & Schedule
 
-::: {.column width="60%"}
-\begin{gather*}
-a_1=b_1+c_1\\
-a_2=b_2+c_2-d_2+e_2
-\end{gather*} \begin{align}
-a_{11}& =b_{11}&
-  a_{12}& =b_{12}\\
-a_{21}& =b_{21}&
-  a_{22}& =b_{22}+c_{22}
-\end{align}
-:::
-:::::
+---
 
-::: footer
-Learn more: [LaTeX Equations](https://quarto.org/docs/authoring/markdown-basics.html#equations)
-:::
+![](images/news-05.png)
 
-<!-- Dropped from the original demo: Column Layout, because its example table is produced by an R/knitr chunk. -->
+---
 
-## Incremental Lists
+![](images/news-02.png)
 
-Lists can optionally be displayed incrementally:
+---
 
-::: incremental
-- First item
-- Second item
-- Third item
-:::
+![](images/news-04.png)
 
-. . .
+---
 
-<br/> Insert pauses to make other types of content display incrementally.
+![](images/news-01.png)
 
-::: footer
-Learn more: [Incremental Lists](https://quarto.org/docs/presentations/revealjs/#incremental-lists)
-:::
+---
 
-## Fragments
+![](images/news-03.png)
 
-Incremental text display and animation with fragments:
+---
 
-<br/>
+## What about
 
-::: {.fragment .fade-in}
-Fade in
-:::
+![](images/news-a.png)
 
-::: {.fragment .fade-up}
-Slide up while fading in
-:::
+## What about
 
-::: {.fragment .fade-left}
-Slide left while fading in
-:::
+![](images/news-b.png)
 
-::: {.fragment .fade-in-then-semi-out}
-Fade in then semi out
-:::
+## Our course
 
-. . .
+Economic approach to public problems
 
-::: {.fragment .strike}
-Strike
-:::
+## Structure: On each Monday,
 
-::: {.fragment .highlight-red}
-Highlight red
-:::
+1. Theory (lectures: textbooks)
+2. Practice (lectures: papers)
+3. Theory + Practice (discussions: content & building toward final project)
 
-::: footer
-Learn more: [Fragments](https://quarto.org/docs/presentations/revealjs/advanced.html#fragments)
-:::
+## Grading
 
-## Slide Backgrounds {background="#43464B"}
+- Midterm Exam: 25%
+- Participation: 25%
+- Project (building toward your own policy brief & presenting it): 50%
+  - Assignments: 25%
+  - Presentation of Final Project: 25%
+ 
+## Textbook
 
-Set the `background` attribute on a slide to change the background color (all CSS color formats are supported).
+[Stiglitz, Josepf E. and Jay K. Rosengard (2015), Economics of Public Sector, W. W. Norton & Co., 4th](https://wwnorton.com/books/9780393925227)
 
-Different background transitions are available via the `background-transition` option.
+- Tel: (02) 6632-0088
+- email: chiafeng@bkagency.com.tw
 
-::: footer
-Learn more: [Slide Backgrounds](https://quarto.org/docs/presentations/revealjs/#color-backgrounds)
-:::
+## Weekly writing assignments
+ 
+W1 Criteria → W2 Conversation → W3 Analysis → **W4 Memo** → W5 Summarize → W6 Respond → **W7 Bibliography** → W8 Purpose → **W9 Outline** → W10 Audience → **W11 Exec Summary** → **W12 Brief**
 
-## Media Backgrounds {background="#43464B" background-image="images/milky-way.jpeg"}
 
-You can also use the following as a slide background:
+## The Process (1/2) {.smaller}
+ 
+1. **W1 Criteria** — what makes a policy brief good
+2. **W2 Conversation** — entering the scholarly conversation
+3. **W3 Analysis** — analyze structure, vocabulary, and citation in sample papers
+4. **W4 Memo** — draft a decision memo
+5. **W5 Summarize** — summarize sources accurately
+6. **W6 Respond** — three ways to respond to a source
+8. (Retrocession Day, Observed)
+9. (Midterm Exam)
+ 
+## The Process (2/2) {.smaller}
+ 
+10. **W7 Bibliography** — annotate your sources
+11. **W8 Purpose** — what, so what, now what
+12. **W9 Outline** — build a sentence outline
+13. **W10 Audience** — orient your reader from the start
+14. **W11 Exec Summary** — craft an effective executive summary
+15. **W12 Brief** — write the final policy brief
+16. **Presentation** — present your brief
 
-- An image: `background-image`
+# Part 2: A little bit of economics
 
-- A video: `background-video`
+## The Utility Possibilities Curve
 
-- An iframe: `background-iframe`
+![](images/fig-3-2.jpg)
 
-::: footer
-Learn more: [Media Backgrounds](https://quarto.org/docs/presentations/revealjs/#image-backgrounds)
-:::
+---
 
-## Absolute Position
+## Crusoe's Budget Constraint
 
-Position images or other elements at precise locations
+![](images/fig-3-3.jpg)
 
-![](mini/images/kitten-400-350.jpeg){.absolute top="170" left="30" width="400" height="400"}
+---
+ 
+## The Consumer's Choice Problem
 
-![](mini/images/kitten-450-250.jpeg){.absolute .fragment top="150" right="80" width="450"}
+![](images/fig-3-4.jpg)
 
-![](mini/images/kitten-300-200.jpeg){.absolute .fragment bottom="110" right="130" width="300"}
+---
+ 
+## Exchange Efficiency
 
-::: footer
-Learn more: [Absolute Position](https://quarto.org/docs/presentations/revealjs/advanced.html#absolute-position)
-:::
+![Crusoe's and Friday's consumption of apples and oranges](images/fig-3-5.jpg)
 
-## Auto-Animate {auto-animate="true" auto-animate-easing="ease-in-out"}
+---
+ 
+## Key Terms to Explain (1/2)
+ 
+- **Origin (O and O′)**
+- **Endowment point (E)**
+- **Indifference curve**
+- **Marginal rate of substitution (MRS)**
+- **Feasible allocation**
+ 
+---
+ 
+## Key Terms to Explain (2/2)
+ 
+- **Pareto efficient allocation**
+- **Contract curve**
+- **Pure exchange economy**
+- **General equilibrium**
 
-Automatically animate matching elements across slides with Auto-Animate.
+## Production Efficiency and the Production Possibility Frontier
 
-:::::: r-hstack
-::: {data-id="box1" auto-animate-delay="0" style="background: #2780e3; width: 200px; height: 150px; margin: 10px;"}
-:::
+![](images/fig-3-6.jpg)
 
-::: {data-id="box2" auto-animate-delay="0.1" style="background: #3fb618; width: 200px; height: 150px; margin: 10px;"}
-:::
+## Isoquants and Iso-cost Lines
 
-::: {data-id="box3" auto-animate-delay="0.2" style="background: #e83e8c; width: 200px; height: 150px; margin: 10px;"}
-:::
-::::::
+![](images/fig-3-7.jpg)
 
-::: footer
-Learn more: [Auto-Animate](https://quarto.org/docs/presentations/revealjs/advanced.html#auto-animate)
-:::
+## Production Efficiency
 
-## Auto-Animate {auto-animate="true" auto-animate-easing="ease-in-out"}
+![](images/fig-3-8.jpg)
 
-Automatically animate matching elements across slides with Auto-Animate.
+## Production Mix Efficiency
 
-:::::: r-stack
-::: {data-id="box1" style="background: #2780e3; width: 350px; height: 350px; border-radius: 200px;"}
-:::
+Requires that the Marginal Rate of Transformation (MRT) between two goods in production equals consumers' Marginal Rate of Substitution (MRS) between the two goods in consumption.
 
-::: {data-id="box2" style="background: #3fb618; width: 250px; height: 250px; border-radius: 200px;"}
-:::
+![](images/fig-3-8.jpg)
 
-::: {data-id="box3" style="background: #e83e8c; width: 150px; height: 150px; border-radius: 200px;"}
-:::
-::::::
+# Part 3: Writing and Discussion
 
-::: footer
-Learn more: [Auto-Animate](https://quarto.org/docs/presentations/revealjs/advanced.html#auto-animate)
-:::
+## Policy Brief: Some Examples
 
-## Slide Transitions {.smaller}
+- [Eliminating Barriers to Job Seekers' Take-Up of Social Benefits in France](https://www.povertyactionlab.org/publication/eliminating-barriers-job-seekers-take-social-benefits-france)
+- [Empowering Citizens with Information: Improving Access to Social Assistance in Indonesia](https://www.povertyactionlab.org/publication/empowering-citizens-information-improving-access-social-assistance-indonesia)
+- [Assessing Policy Options for Subsidies to Improve the Affordable Care Act](https://www.rand.org/pubs/research_briefs/RB9886.html)
+- [A New Approach to Measuring Income Inequality Over Recent Decades](https://www.rand.org/pubs/research_briefs/RBA516-1.html)
+- [A Call for Leadership: Persistent State and Local Public Pension Crises Across the United States](https://www.rand.org/pubs/research_briefs/RBA2307-2.html)
 
-The next few slides will transition using the `slide` transition
+## Today
 
-| Transition | Description |
-|------------------------------------|------------------------------------|
-| `none` | No transition (default, switch instantly) |
-| `fade` | Cross fade |
-| `slide` | Slide horizontally |
-| `convex` | Slide at a convex angle |
-| `concave` | Slide at a concave angle |
-| `zoom` | Scale the incoming slide so it grows in from the center of the screen. |
-
-::: footer
-Learn more: [Slide Transitions](https://quarto.org/docs/presentations/revealjs/advanced.html#slide-transitions)
-:::
-
-<!-- Dropped from the original demo: Tabsets, because both tabs execute R chunks. -->
-
-<!-- Dropped from the original demo: Interactive Slides with leaflet/htmlwidgets, because it requires R and the leaflet package. -->
-
-<!-- Dropped from the original demo: Interactive Slides with Observable/Shiny, because the demo data is created by R and the visualization imports JS modules from a CDN. -->
-
-## Preview Links
-
-Navigate to hyperlinks without disrupting the flow of your presentation.
-
-Use the `preview-links` option to open links in an iframe on top of your slides. Try clicking the link below for a demonstration:
-
-::: {style="text-align: center; margin-top: 1em"}
-[Matplotlib: Visualization with Python](https://matplotlib.org/){preview-link="true" style="text-align: center"}
-:::
-
-::: footer
-Learn more: [Preview Links](https://quarto.org/docs/presentations/revealjs/presenting.html#preview-links)
-:::
-
-## Themes
-
-10 Built-in Themes (or [create your own](https://quarto.org/docs/presentations/revealjs/themes.html#creating-themes))
-
-::: {layout-ncol="2"}
-![](images/moon.png)
-
-![](images/sky.png)
-:::
-
-::: footer
-Learn more: [Themes](https://quarto.org/docs/presentations/revealjs/themes.html)
-:::
-
-## Easy Navigation
-
-::: {style="margin-bottom: 0.9em;"}
-Quickly jump to other parts of your presentation
-:::
-
-::: {layout="[1, 20]"}
-![](images/presentation-menu.png){width="41"}
-
-Toggle the slide menu with the menu button (bottom left of slide) to go to other slides and access presentation tools.
-:::
-
-You can also press {{< kbd m >}} to toggle the menu open and closed.
-
-You can also press {{< kbd g >}} to toggle 'Jump To Slide' modal box to quickly go to one of your slide using its number or id.
-
-::: footer
-Learn more: [Navigation](https://quarto.org/docs/presentations/revealjs/presenting.html#navigation-menu) / [Jump To Slide](https://quarto.org/docs/presentations/revealjs/presenting.html#jump-to-slide)
-:::
-
-## Jump To Slide
-
-::: {style="margin-bottom: 0.9em;"}
-Quickly jump to other parts of your presentation
-:::
-
-## Chalkboard {chalkboard-buttons="true"}
-
-::: {style="margin-bottom: 0.9em;"}
-Free form drawing and slide annotations
-:::
-
-::: {layout="[1, 20]"}
-![](images/presentation-chalkboard.png){width="41"}
-
-Use the chalkboard button at the bottom left of the slide to toggle the chalkboard.
-:::
-
-::: {layout="[1, 20]"}
-![](images/presentation-notes-canvas.png){width="41"}
-
-Use the notes canvas button at the bottom left of the slide to toggle drawing on top of the current slide.
-:::
-
-You can also press {{< kbd b >}} to toggle the chalkboard or {{< kbd c >}} to toggle the notes canvas.
-
-::: footer
-Learn more: [Chalkboard](https://quarto.org/docs/presentations/revealjs/presenting.html#chalkboard)
-:::
-
-## Point of View
-
-press {{< kbd o >}} to toggle overview mode:
-
-![](images/overview-mode.png){.border}
-
-Hold down the {{< kbd Alt linux=Ctrl >}} and click on any element to zoom towards it---try it now on this slide.
-
-::: footer
-Learn more: [Overview Mode](https://quarto.org/docs/presentations/revealjs/presenting.html#overview-mode), [Slide Zoom](https://quarto.org/docs/presentations/revealjs/presenting.html#slide-zoom)
-:::
-
-## Speaker View
-
-press {{< kbd s >}} (or use the tools in presentation menu ![](images/presentation-menu.png){style="padding-bottom: 1px; margin: 0" width="0.5em" height="0.5em"}) to open speaker view
-
-![](images/speaker-view.png){fig-align="center" style="border: 3px solid #dee2e6;" width="780"}
-
-::: footer
-Learn more: [Speaker View](https://quarto.org/docs/presentations/revealjs/presenting.html#speaker-view)
-:::
-
-## Scroll View {#scroll-view}
-
-Press {{< kbd r >}} (or use the tools in presentation menu ![](images/presentation-menu.png){style="padding-bottom: 1px; margin: 0" width="0.5em" height="0.5em"}) to open scroll view
-
-Try it now on this slide --- You'll see a scroll bar on the right and you can scroll down the presentation using your mouse.
-
-Scroll view behavior can be configured using `scroll-view` configuration.
-
-::: footer
-Learn more: [Scroll View](https://quarto.org/docs/presentations/revealjs/presenting.html#scroll-view)
-:::
-
-<!-- Dropped from the original demo: Authoring Tools with Jupyter/VS Code, because it is a tooling showcase rather than a reusable slide feature. -->
-
-<!-- Dropped from the original demo: Authoring Tools with RStudio, because it is a tooling showcase rather than a reusable slide feature. -->
-
-## And More...
-
-- [Touch](https://quarto.org/docs/presentations/revealjs/advanced.html#touch-navigation) optimized (presentations look great on mobile, swipe to navigate slides)
-- [Footer & Logo](https://quarto.org/docs/presentations/revealjs/#footer-logo) (optionally specify custom footer per-slide or hide global footer)
-- [Auto-Slide](https://quarto.org/docs/presentations/revealjs/presenting.html#auto-slide) (step through slides automatically, without any user input)
-- [Multiplex](https://quarto.org/docs/presentations/revealjs/presenting.html#multiplex) (allows your audience to follow the slides of the presentation you are controlling on their own phone, tablet or laptop).
-
-::: footer
-Learn more: [Quarto Presentations](https://quarto.org/docs/presentations/revealjs/)
-:::
+- Eliminating Barriers to Job Seekers' Take-Up of Social Benefits in France
+- [Empowering Citizens with Information: Improving Access to Social Assistance in Indonesia](https://www.povertyactionlab.org/publication/empowering-citizens-information-improving-access-social-assistance-indonesia)
+- Assessing Policy Options for Subsidies to Improve the Affordable Care Act
+- A New Approach to Measuring Income Inequality Over Recent Decades
+- A Call for Leadership: Persistent State and Local Public Pension Crises Across the United States
